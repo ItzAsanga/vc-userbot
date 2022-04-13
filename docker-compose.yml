@@ -3,10 +3,10 @@ services:
   worker:
     build: .
     environment:
-      REDIS_URI: $REDIS_URI
       SUDO_USERS: $SUDO_USERS
-      SESSION_NAME: $SESSION_NAME
+      SESSION: $SESSION
       API_ID: $API_ID  # defaults to None
       API_HASH: $API_HASH  # defaults to None
       DURATION_LIMIT: DURATION_LIMIT # defaults to None
       BOT_TOKEN: $BOT_TOKEN  # defaults to None
+      HNDLR: $HNDLR
